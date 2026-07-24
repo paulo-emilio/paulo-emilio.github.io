@@ -1,1591 +1,801 @@
-<!--
-==========================================
-PAULO EMÍLIO OLIVEIRA
-Business Intelligence Portfolio
-==========================================
--->
-
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Portfolio - Paulo Emílio Oliveira" />
+  <meta property="og:description" content="Business Intelligence, Analytics e Engenharia de Dados. Estudos de caso reais utilizando Power BI, SQL, Python, SAP e Apache Airflow." />
+  <meta property="og:image" content="./img/wallpaper.png" />
+  <meta property="og:url" content="https://paulo-emilio.github.io" />
 
-<meta charset="UTF-8">
+  <title>Portfolio - Paulo Emílio Oliveira</title>
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-<title>
-
-Paulo Emílio Oliveira | Business Intelligence
-
-</title>
-
-<meta
-name="description"
-content="Portfólio profissional de Business Intelligence, Data Analytics e Engenharia de Dados. Soluções analíticas utilizando Power BI, SQL, Python, SAP, APIs e Apache Airflow.">
-
-<link rel="shortcut icon"
-href="./assets/images/logo.ico"
-type="image/x-icon">
-
-<link rel="preconnect"
-href="https://fonts.googleapis.com">
-
-<link rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-rel="stylesheet">
-
-<link rel="stylesheet"
-href="./assets/css/style.css">
-
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<main>
+  <!--
+    - #MAIN
+  -->
 
-<aside class="sidebar" data-sidebar>
+  <main>
 
-<div class="sidebar-info">
+    <!--
+      - #SIDEBAR
+    -->
 
-<figure class="avatar-box">
+    <aside class="sidebar" data-sidebar>
 
-<img src="./assets/images/profile.png"
-alt="Paulo Emílio Oliveira"
-width="80">
+      <div class="sidebar-info">
 
-</figure>
+        <figure class="avatar-box">
+          <img src="./assets/images/profile.png" alt="Paulo Emílio Oliveira" width="80">
+        </figure>
 
-<div class="info-content">
+        <div class="info-content">
+          <h1 class="name" title="Paulo Emílio Oliveira">Paulo Emílio Oliveira</h1>
 
-<h1 class="name"
-title="Paulo Emílio Oliveira">
+          <p class="title">Business Intelligence &amp; Analytics</p>
+        </div>
 
-Paulo Emílio Oliveira
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
 
-</h1>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
 
-<p class="title">
+      </div>
 
-Business Intelligence
+      <div class="sidebar-info_more">
 
-</p>
+        <div class="separator"></div>
 
-<p class="title">
+        <ul class="social-list">
 
-Data Analytics
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/paulo-emilio/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
 
-</p>
+          <li class="social-item">
+            <a href="https://wa.me/5537999481513" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
 
-<p class="title">
+          <li class="social-item">
+            <a href="https://www.instagram.com/pauloemilio__/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
 
-Engenharia de Dados
+          <li class="social-item">
+            <a href="https://github.com/paulo-emilio" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
 
-</p>
+          <li class="social-item">
+            <a href="mailto:pauloemilio.ds@gmail.com" class="social-link">
+              <ion-icon name="mail"></ion-icon>
+            </a>
+          </li>
 
-</div>
+        </ul>
 
-<button class="info_more-btn"
-data-sidebar-btn>
+      </div>
 
-<span>
+    </aside>
 
-Contato
+    <!--
+      - #main-content
+    -->
 
-</span>
+    <div class="main-content">
 
-<ion-icon
-name="chevron-down">
+      <!--
+        - #NAVBAR
+      -->
 
-</ion-icon>
+      <nav class="navbar">
 
-</button>
+        <ul class="navbar-list">
 
-</div>
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Portfólio</button>
+          </li>
 
-<div class="sidebar-info_more">
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Currículo</button>
+          </li>
 
-<div class="separator"></div>
+        </ul>
 
-<ul class="contacts-list">
+      </nav>
 
-<li class="contact-item">
-
-<div class="icon-box">
-
-<ion-icon name="mail-outline"></ion-icon>
-
-</div>
-
-<div class="contact-info">
-
-<p class="contact-title">
-
-Email
-
-</p>
-
-<a href="mailto:pauloemilio.ds@gmail.com"
-class="contact-link">
-
-pauloemilio.ds@gmail.com
-
-</a>
-
-</div>
-
-</li>
-
-<li class="contact-item">
-
-<div class="icon-box">
-
-<ion-icon name="logo-linkedin"></ion-icon>
-
-</div>
-
-<div class="contact-info">
-
-<p class="contact-title">
-
-LinkedIn
-
-</p>
-
-<a href="https://www.linkedin.com/in/paulo-emilio"
-target="_blank"
-class="contact-link">
-
-Abrir Perfil
-
-</a>
-
-</div>
-
-</li>
-
-<li class="contact-item">
-
-<div class="icon-box">
-
-<ion-icon name="logo-github"></ion-icon>
-
-</div>
-
-<div class="contact-info">
-
-<p class="contact-title">
-
-GitHub
-
-</p>
-
-<a href="https://github.com/paulo-emilio/Business-Intelligence-Case-Studies"
-target="_blank"
-class="contact-link">
-
-Business Intelligence Case Studies
-
-</a>
-
-</div>
-
-</li>
-
-<li class="contact-item">
-
-<div class="icon-box">
-
-<ion-icon name="document-text-outline"></ion-icon>
-
-</div>
-
-<div class="contact-info">
-
-<p class="contact-title">
-
-Currículo
-
-</p>
-
-<a href="./assets/docs/Curriculo.pdf"
-target="_blank"
-class="contact-link">
-
-Download
-
-</a>
-
-</div>
-
-</li>
-
-</ul>
-
-<div class="separator"></div>
-
-<ul class="social-list">
-
-<li class="social-item">
-
-<a href="https://github.com/paulo-emilio"
-class="social-link">
-
-<ion-icon
-name="logo-github">
-
-</ion-icon>
-
-</a>
-
-</li>
-
-<li class="social-item">
-
-<a href="https://www.linkedin.com/in/paulo-emilio"
-class="social-link">
-
-<ion-icon
-name="logo-linkedin">
-
-</ion-icon>
-
-</a>
-
-</li>
-
-</ul>
-
-</div>
-
-</aside>
-
-
-
-<!--
-==========================================
-BLOCO 2
-NAVEGAÇÃO + HOME
-Substitui a navegação atual e o <article class="about">
-==========================================
--->
-
-<nav class="navbar">
-
-  <ul class="navbar-list">
-
-    <li class="navbar-item">
-      <button class="navbar-link active" data-nav-link>
-        Início
-      </button>
-    </li>
-
-    <li class="navbar-item">
-      <button class="navbar-link" data-nav-link>
-        Cases
-      </button>
-    </li>
-
-    <li class="navbar-item">
-      <button class="navbar-link" data-nav-link>
-        Currículo
-      </button>
-    </li>
-
-    <li class="navbar-item">
-      <button class="navbar-link" data-nav-link>
-        Contato
-      </button>
-    </li>
-
-  </ul>
-
-</nav>
-
-
-
-
-
-<article class="about active" data-page="início">
-
-<header>
-
-<h2 class="h2 article-title">
-
-Business Intelligence
-
-</h2>
-
-</header>
-
-<section class="hero-home">
-
-<h1 class="hero-name">
-
-Paulo Emílio Oliveira
-
-</h1>
-
-<h2 class="hero-role">
-
-Business Intelligence • Data Analytics • Engenharia de Dados
-
-</h2>
-
-<p class="hero-description">
-
-Transformando problemas de negócio em soluções analíticas por meio de
-Power BI, SQL, Python, SAP e Engenharia de Dados.
-
-</p>
-
-<div class="hero-buttons">
-
-<a
-href="https://github.com/paulo-emilio"
-target="_blank"
-class="hero-btn">
-
-GitHub
-
-</a>
-
-<a
-href="https://www.linkedin.com/in/paulo-emilio"
-target="_blank"
-class="hero-btn">
-
-LinkedIn
-
-</a>
-
-<a
-href="./assets/docs/Curriculo.pdf"
-target="_blank"
-class="hero-btn">
-
-Currículo
-
-</a>
-
-</div>
-
-</section>
-
-
-
-
-
-<section class="service">
-
-<h3 class="h3 service-title">
-
-Especialidades
-
-</h3>
-
-<ul class="service-list">
-
-<li class="service-item">
-
-<div class="service-icon-box">
-
-<ion-icon name="analytics-outline"></ion-icon>
-
-</div>
-
-<div class="service-content-box">
-
-<h4 class="h4 service-item-title">
-
-Business Intelligence
-
-</h4>
-
-<p class="service-item-text">
-
-Desenvolvimento de soluções analíticas orientadas à tomada de decisão,
-com indicadores estratégicos, dashboards executivos e acompanhamento de KPIs.
-
-</p>
-
-</div>
-
-</li>
-
-<li class="service-item">
-
-<div class="service-icon-box">
-
-<ion-icon name="server-outline"></ion-icon>
-
-</div>
-
-<div class="service-content-box">
-
-<h4 class="h4 service-item-title">
-
-Engenharia de Dados
-
-</h4>
-
-<p class="service-item-text">
-
-Preparação da camada analítica utilizando SQL, Data Lake,
-ETL, Data Mart e integração de múltiplas fontes de dados.
-
-</p>
-
-</div>
-
-</li>
-
-<li class="service-item">
-
-<div class="service-icon-box">
-
-<ion-icon name="git-network-outline"></ion-icon>
-
-</div>
-
-<div class="service-content-box">
-
-<h4 class="h4 service-item-title">
-
-Integração de Dados
-
-</h4>
-
-<p class="service-item-text">
-
-Integração entre SAP, APIs, bancos de dados e plataformas
-corporativas para consolidação de informações.
-
-</p>
-
-</div>
-
-</li>
-
-<li class="service-item">
-
-<div class="service-icon-box">
-
-<ion-icon name="settings-outline"></ion-icon>
-
-</div>
-
-<div class="service-content-box">
-
-<h4 class="h4 service-item-title">
-
-Automação
-
-</h4>
-
-<p class="service-item-text">
-
-Automação de pipelines utilizando Python e Apache Airflow,
-reduzindo processos manuais e aumentando a confiabilidade dos dados.
-
-</p>
-
-</div>
-
-</li>
-
-</ul>
-
-</section>
-
-
-
-
-
-<section class="about-text">
-
-<p>
-
-Meu foco é transformar dados em ativos estratégicos para o negócio,
-desenvolvendo soluções completas de Business Intelligence,
-desde a preparação dos dados até a construção de indicadores
-executivos para apoio à tomada de decisão.
-
-</p>
-
-<p>
-
-Ao longo da minha trajetória participei de projetos envolvendo
-implantação SAP S/4HANA, plataformas analíticas,
-integração de APIs, Data Lake,
-Power BI, SQL, Python e Apache Airflow,
-sempre buscando gerar valor por meio dos dados.
-
-</p>
-
-</section>
-
-</article>
-
-
-
-<!--
-===========================================================
-BLOCO 3
-CASES DE BUSINESS INTELLIGENCE
-Substitui COMPLETAMENTE o article Portfolio
-===========================================================
--->
-
-<article class="portfolio" data-page="cases">
-
-<header>
-
-<h2 class="h2 article-title">
-
-Casos de Business Intelligence
-
-</h2>
-
-<p class="portfolio-intro">
-
-Coleção de soluções analíticas desenvolvidas em ambiente corporativo
-para apoiar decisões estratégicas, automatizar processos
-e transformar dados em valor para o negócio.
-
-</p>
-
-</header>
-
-
-
-
-
-<section class="projects">
-
-<ul class="project-list">
-
-
-
-
-
-
-
-<li class="project-item active">
-
-<a href="https://github.com/paulo-emilio/Business-Intelligence-Case-Studies/tree/main/Gestao-de-Testes-Integrados">
-
-<figure class="project-img">
-
-<img
-src="./assets/images/projetos/testes-sap-banner.png"
-alt="Plataforma Analítica para Gestão de Testes Integrados SAP"
-loading="lazy">
-
-</figure>
-
-<h3 class="project-title">
-
-Plataforma Analítica para Gestão de Testes Integrados SAP
-
-</h3>
-
-<p class="project-category">
-
-Power BI • Python • SAP Cloud ALM • DAX
-
-</p>
-
-<p class="project-description">
-
-Plataforma analítica desenvolvida para acompanhar a execução dos
-Testes Integrados durante a implantação do SAP S/4HANA,
-consolidando indicadores de produtividade,
-defeitos e evolução dos testes em dashboards executivos.
-
-</p>
-
-</a>
-
-</li>
-
-
-
-
-
-
-
-
-
-<li class="project-item active">
-
-<a href="https://github.com/paulo-emilio/Business-Intelligence-Case-Studies/tree/main/Otimizacao-de-Custos-de-Licenciamento">
-
-<figure class="project-img">
-
-<img
-src="./assets/images/projetos/licenciamento-banner.png"
-alt="Licenciamento ERP"
-loading="lazy">
-
-</figure>
-
-<h3 class="project-title">
-
-Otimização de Custos de Licenciamento ERP
-
-</h3>
-
-<p class="project-category">
-
-SQL • Python • Airflow • Power BI
-
-</p>
-
-<p class="project-description">
-
-Solução analítica para identificar oportunidades
-de redução de custos relacionados ao licenciamento ERP,
-utilizando integração de dados,
-processamento automatizado e dashboards executivos.
-
-</p>
-
-</a>
-
-</li>
-
-
-
-
-
-
-
-
-
-<li class="project-item active">
-
-<a href="https://github.com/paulo-emilio/Business-Intelligence-Case-Studies/tree/main/Governanca-Executiva-Implantacao-SAP">
-
-<figure class="project-img">
-
-<img
-src="./assets/images/projetos/governanca-sap-banner.png"
-alt="Governança Executiva SAP"
-loading="lazy">
-
-</figure>
-
-<h3 class="project-title">
-
-Governança Executiva da Implantação SAP
-
-</h3>
-
-<p class="project-category">
-
-Power BI • SAP • Analytics
-
-</p>
-
-<p class="project-description">
-
-Dashboard executivo para acompanhamento da implantação SAP,
-centralizando indicadores estratégicos,
-cronograma, riscos e evolução das entregas.
-
-</p>
-
-</a>
-
-</li>
-
-
-
-
-
-
-
-
-
-<li class="project-item active">
-
-<a href="https://github.com/paulo-emilio/Business-Intelligence-Case-Studies/tree/main/Gestao-ROI-Comercial">
-
-<figure class="project-img">
-
-<img
-src="./assets/images/projetos/roi-banner.png"
-alt="ROI Comercial"
-loading="lazy">
-
-</figure>
-
-<h3 class="project-title">
-
-Plataforma Analítica para Gestão de ROI Comercial
-
-</h3>
-
-<p class="project-category">
-
-Power BI • SQL • Salesforce
-
-</p>
-
-<p class="project-description">
-
-Monitoramento executivo do retorno sobre investimentos,
-forecast financeiro,
-custos,
-receitas
-e indicadores estratégicos da operação comercial.
-
-</p>
-
-</a>
-
-</li>
-
-
-
-
-
-
-
-
-
-<!--
-ESPAÇO PARA NOVOS CASES
--->
-
-<li class="project-item active">
-
-<a href="https://github.com/paulo-emilio/Business-Intelligence-Case-Studies/tree/main/Jira-Analytics">
-
-<figure class="project-img">
-
-<img
-src="./assets/images/projetos/jira-analytics-banner.png"
-alt="Plataforma Analítica para Gestão de Chamados de TI (Jira)"
-loading="lazy">
-
-</figure>
-
-<h3 class="project-title">
-
-Plataforma Analítica para Gestão de Chamados de TI (Jira)
-
-</h3>
-
-<p class="project-category">
-
-Jira API • Apache Airflow • SQL • Power BI
-
-</p>
-
-<p class="project-description">
-
-Plataforma analítica para transformar dados operacionais do Jira
-em indicadores estratégicos de performance de TI,
-incluindo backlog, volume por equipe e os KPIs MTTA e MTTR.
-
-</p>
-
-</a>
-
-</li>
-
-
-
-
-
-<li class="project-item active">
-
-<a href="https://github.com/paulo-emilio/Business-Intelligence-Case-Studies/tree/main/Gestao-Financeira-Projeto">
-
-<figure class="project-img">
-
-<img
-src="./assets/images/projetos/financeira-sap-banner.png"
-alt="Plataforma Analítica para Gestão Financeira da Implantação SAP"
-loading="lazy">
-
-</figure>
-
-<h3 class="project-title">
-
-Plataforma Analítica para Gestão Financeira da Implantação SAP
-
-</h3>
-
-<p class="project-category">
-
-Excel • Power Query • DAX • Power BI
-
-</p>
-
-<p class="project-description">
-
-Centralização do controle financeiro de uma implantação SAP,
-com visão executiva de orçamento realizado,
-saldo disponível e forecast por categoria de despesa.
-
-</p>
-
-</a>
-
-</li>
-
-
-
-
-
-<li class="project-item future-project">
-
-<div class="future-card">
-
-<ion-icon name="add-circle-outline"></ion-icon>
-
-<h3>
-
-Próximo Case
-
-</h3>
-
-<p>
-
-Em desenvolvimento
-
-</p>
-
-</div>
-
-</li>
-
-
-
-
-
-<li class="project-item future-project">
-
-<div class="future-card">
-
-<ion-icon name="add-circle-outline"></ion-icon>
-
-<h3>
-
-Próximo Case
-
-</h3>
-
-<p>
-
-Em desenvolvimento
-
-</p>
-
-</div>
-
-</li>
-
-
-
-
-
-</ul>
-
-</section>
-
-</article>
-
-
-
-<!--
-===========================================================
-BLOCO 4
-CURRÍCULO
-(Substitui completamente o article Resume)
-===========================================================
--->
-
-<article class="resume" data-page="currículo">
-
-<header>
-
-<h2 class="h2 article-title">
-
-Experiência Profissional
-
-</h2>
-
-<p class="resume-intro">
-
-Minha atuação está concentrada no desenvolvimento de soluções
-analíticas voltadas para Business Intelligence,
-integração de dados, automação e apoio à tomada de decisão.
-
-</p>
-
-</header>
-
-
-
-
-
-<section class="timeline">
-
-<div class="title-wrapper">
-
-<div class="icon-box">
-
-<ion-icon name="briefcase-outline"></ion-icon>
-
-</div>
-
-<h3 class="h3">
-
-Experiência
-
-</h3>
-
-</div>
-
-<ol class="timeline-list">
-
-
-
-
-
-
-
-<li class="timeline-item">
-
-<h4 class="h4 timeline-item-title">
-
-Business Intelligence & Data Analytics
-
-</h4>
-
-<span>
-
-Projetos Corporativos
-
-</span>
-
-<p class="timeline-text">
-
-Desenvolvimento de plataformas analíticas utilizando
-Power BI,
-SQL,
-Python
-e Apache Airflow.
-
-Participação em projetos envolvendo implantação SAP S/4HANA,
-integração de APIs,
-Data Lake,
-Data Mart
-e construção de dashboards executivos
-para apoio à tomada de decisão.
-
-</p>
-
-</li>
-
-
-
-
-
-
-
-<li class="timeline-item">
-
-<h4 class="h4 timeline-item-title">
-
-Analytics & Automação
-
-</h4>
-
-<span>
-
-Business Intelligence
-
-</span>
-
-<p class="timeline-text">
-
-Construção de processos automatizados para preparação,
-tratamento e disponibilização de dados analíticos,
-reduzindo atividades manuais e aumentando a confiabilidade
-das informações utilizadas pelas áreas de negócio.
-
-</p>
-
-</li>
-
-
-
-
-
-
-
-<li class="timeline-item">
-
-<h4 class="h4 timeline-item-title">
-
-Power BI Developer
-
-</h4>
-
-<span>
-
-Dashboards Executivos
-
-</span>
-
-<p class="timeline-text">
-
-Desenvolvimento de dashboards estratégicos para
-Governança SAP,
-Projetos,
-ROI Comercial,
-Testes Integrados,
-Indicadores Financeiros,
-Operações de TI
-e Segurança da Informação.
-
-</p>
-
-</li>
-
-
-
-
-
-
-
-</ol>
-
-</section>
-
-
-
-
-
-
-
-<section class="skill">
-
-<h3 class="h3 skills-title">
-
-Tecnologias
-
-</h3>
-
-<ul class="skills-list content-card">
-
-<li class="skills-item">
-
-<div class="title-wrapper">
-
-<h5 class="h5">
-
-Power BI
-
-</h5>
-
-<span>
-
-Avançado
-
-</span>
-
-</div>
-
-<div class="skill-progress-bg">
-
-<div class="skill-progress-fill"
-style="width:95%"></div>
-
-</div>
-
-</li>
-
-
-
-
-
-
-
-<li class="skills-item">
-
-<div class="title-wrapper">
-
-<h5 class="h5">
-
-SQL
-
-</h5>
-
-<span>
-
-Avançado
-
-</span>
-
-</div>
-
-<div class="skill-progress-bg">
-
-<div class="skill-progress-fill"
-style="width:92%"></div>
-
-</div>
-
-</li>
-
-
-
-
-
-
-
-<li class="skills-item">
-
-<div class="title-wrapper">
-
-<h5 class="h5">
-
-Python
-
-</h5>
-
-<span>
-
-Avançado
-
-</span>
-
-</div>
-
-<div class="skill-progress-bg">
-
-<div class="skill-progress-fill"
-style="width:88%"></div>
-
-</div>
-
-</li>
-
-
-
-
-
-
-
-<li class="skills-item">
-
-<div class="title-wrapper">
-
-<h5 class="h5">
-
-Apache Airflow
-
-</h5>
-
-<span>
-
-Intermediário
-
-</span>
-
-</div>
-
-<div class="skill-progress-bg">
-
-<div class="skill-progress-fill"
-style="width:75%"></div>
-
-</div>
-
-</li>
-
-
-
-
-
-
-
-<li class="skills-item">
-
-<div class="title-wrapper">
-
-<h5 class="h5">
-
-SAP Analytics
-
-</h5>
-
-<span>
-
-Intermediário
-
-</span>
-
-</div>
-
-<div class="skill-progress-bg">
-
-<div class="skill-progress-fill"
-style="width:72%"></div>
-
-</div>
-
-</li>
-
-
-
-
-
-
-
-<li class="skills-item">
-
-<div class="title-wrapper">
-
-<h5 class="h5">
-
-Power Query & DAX
-
-</h5>
-
-<span>
-
-Avançado
-
-</span>
-
-</div>
-
-<div class="skill-progress-bg">
-
-<div class="skill-progress-fill"
-style="width:90%"></div>
-
-</div>
-
-</li>
-
-
-
-
-
-
-
-<li class="skills-item">
-
-<div class="title-wrapper">
-
-<h5 class="h5">
-
-Integração de APIs
-
-</h5>
-
-<span>
-
-Intermediário
-
-</span>
-
-</div>
-
-<div class="skill-progress-bg">
-
-<div class="skill-progress-fill"
-style="width:78%"></div>
-
-</div>
-
-</li>
-
-
-
-
-
-
-
-<li class="skills-item">
-
-<div class="title-wrapper">
-
-<h5 class="h5">
-
-Data Lake & ETL
-
-</h5>
-
-<span>
-
-Intermediário
-
-</span>
-
-</div>
-
-<div class="skill-progress-bg">
-
-<div class="skill-progress-fill"
-style="width:80%"></div>
-
-</div>
-
-</li>
-
-</ul>
-
-</section>
-
-</article>
-
-
-
-<!--
-===========================================================
-BLOCO 5
-CONTATO + FECHAMENTO
-(Substitui completamente o article Contact)
-===========================================================
--->
-
-<article class="contact" data-page="contato">
-
-<header>
-
-<h2 class="h2 article-title">
-
-Vamos conversar?
-
-</h2>
-
-<p class="contact-intro">
-
-Estou sempre aberto para conversar sobre oportunidades,
-Business Intelligence,
-Analytics,
-Engenharia de Dados
-e novos desafios profissionais.
-
-Se você procura alguém para transformar dados em soluções analíticas,
-ficarei feliz em conversar.
-
-</p>
-
-</header>
-
-
-
-
-
-
-
-<section class="contact-cards">
-
-<div class="contact-card">
-
-<div class="icon-box">
-
-<ion-icon name="mail-outline"></ion-icon>
-
-</div>
-
-<h3>
-
-Email
-
-</h3>
-
-<a
-href="mailto:pauloemilio.ds@gmail.com">
-
-pauloemilio.ds@gmail.com
-
-</a>
-
-</div>
-
-
-
-
-
-
-
-<div class="contact-card">
-
-<div class="icon-box">
-
-<ion-icon
-name="logo-linkedin">
-
-</ion-icon>
-
-</div>
-
-<h3>
-
-LinkedIn
-
-</h3>
-
-<a
-target="_blank"
-href="https://www.linkedin.com/in/paulo-emilio">
-
-linkedin.com/in/paulo-emilio
-
-</a>
-
-</div>
-
-
-
-
-
-
-
-<div class="contact-card">
-
-<div class="icon-box">
-
-<ion-icon
-name="logo-github">
-
-</ion-icon>
-
-</div>
-
-<h3>
-
-GitHub
-
-</h3>
-
-<a
-target="_blank"
-href="https://github.com/paulo-emilio/Business-Intelligence-Case-Studies">
-
-Business Intelligence Case Studies
-
-</a>
-
-</div>
-
-
-
-
-
-
-
-<div class="contact-card">
-
-<div class="icon-box">
-
-<ion-icon
-name="document-text-outline">
-
-</ion-icon>
-
-</div>
-
-<h3>
-
-Currículo
-
-</h3>
-
-<a
-target="_blank"
-href="./assets/docs/Curriculo.pdf">
-
-Baixar PDF
-
-</a>
-
-</div>
-
-</section>
-
-
-
-
-
-
-
-<section class="contact-message">
-
-<h3 class="h3">
-
-Por que este portfólio?
-
-</h3>
-
-<p>
-
-Este portfólio foi desenvolvido para apresentar casos reais
-de Business Intelligence,
-Analytics e Engenharia de Dados.
-
-Mais do que dashboards,
-cada projeto demonstra uma solução construída para resolver
-problemas de negócio utilizando dados,
-automação
-e visualização analítica.
-
-</p>
-
-</section>
-
-</article>
-
-
-
-
-
-
-
-
-
-</main>
-
-
-
-
-
-
-
-<script
-type="module"
-src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
-
-</script>
-
-<script
-nomodule
-src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
-
-</script>
-
-<script
-src="./assets/js/script.js">
-
-</script>
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="portfólio">
+
+        <header>
+          <h2 class="h2 article-title">Sobre mim</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Sou formado em Sistemas de Informação e pós-graduado em Data Science, atuando com
+            Business Intelligence, Analytics e Engenharia de Dados. Meu foco é transformar dados
+            em ativos estratégicos para o negócio, desenvolvendo soluções completas de BI — desde
+            a preparação e integração dos dados até a construção de indicadores executivos para
+            apoio à tomada de decisão.
+          </p>
+          <br>
+          <p>
+            Ao longo da minha trajetória participei de projetos envolvendo implantação SAP S/4HANA,
+            plataformas analíticas, integração de APIs, Data Lake, Power BI, SQL, Python e Apache
+            Airflow, sempre buscando gerar valor por meio dos dados.
+          </p>
+          <br>
+
+          <!--
+            ------------------------CASES DE BUSINESS INTELLIGENCE---------------------------
+          -->
+
+          <section class="service">
+
+            <h3 class="h3 service-title">Cases de Business Intelligence</h3>
+
+            <ul class="service-list">
+
+              <!--TESTES INTEGRADOS SAP-->
+              <li class="service-item">
+                <a href="https://github.com/paulo-emilio/Business-Intelligence-Case-Studies/tree/main/Gestao-de-Testes-Integrados"
+                  target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/powerbi.png" alt="Power BI" width="40">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Gestão de Testes Integrados SAP</h4>
+
+                    <p class="service-item-text">
+                      Plataforma analítica para acompanhar a execução dos Testes Integrados de uma
+                      implantação SAP S/4HANA, com indicadores de produtividade, defeitos e a lógica
+                      de "Passo da Vez".
+                      <br>
+                      <img src="https://raw.githubusercontent.com/paulo-emilio/Business-Intelligence-Case-Studies/main/Gestao-de-Testes-Integrados/imgs/banner.png"
+                        alt="Gestão de Testes Integrados SAP" width="280">
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <!--LICENCIAMENTO ERP-->
+              <li class="service-item">
+                <a href="https://github.com/paulo-emilio/Business-Intelligence-Case-Studies/tree/main/Otimizacao-de-Custos-de-Licenciamento"
+                  target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/sql.png" alt="SQL" width="40">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Otimização de Custos de Licenciamento ERP</h4>
+
+                    <p class="service-item-text">
+                      Plataforma para identificar oportunidades de redução de custos com licenciamento
+                      SAP, com pipeline automatizado em Python e Apache Airflow.
+                      <br>
+                      <img src="https://raw.githubusercontent.com/paulo-emilio/Business-Intelligence-Case-Studies/main/Otimizacao-de-Custos-de-Licenciamento/imgs/banner.png"
+                        alt="Otimização de Custos de Licenciamento ERP" width="280">
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <!--GOVERNANÇA SAP-->
+              <li class="service-item">
+                <a href="https://github.com/paulo-emilio/Business-Intelligence-Case-Studies/tree/main/Governanca-Executiva-Implantacao-SAP"
+                  target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/powerbi.png" alt="Power BI" width="40">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Governança Executiva da Implantação SAP</h4>
+
+                    <p class="service-item-text">
+                      Dashboards executivos para acompanhamento de cronograma, riscos, capacidade das
+                      equipes e Cutover de uma implantação SAP S/4HANA.
+                      <br>
+                      <img src="https://raw.githubusercontent.com/paulo-emilio/Business-Intelligence-Case-Studies/main/Governanca-Executiva-Implantacao-SAP/imgs/banner.png"
+                        alt="Governança Executiva da Implantação SAP" width="280">
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <!--ROI COMERCIAL-->
+              <li class="service-item">
+                <a href="https://github.com/paulo-emilio/Business-Intelligence-Case-Studies/tree/main/Gestao-ROI-Comercial"
+                  target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/powerbi.png" alt="Power BI" width="40">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Gestão de ROI Comercial</h4>
+
+                    <p class="service-item-text">
+                      Monitoramento executivo do retorno sobre investimentos comerciais, com dados do
+                      Salesforce processados via Apache Airflow.
+                      <br>
+                      <img src="https://raw.githubusercontent.com/paulo-emilio/Business-Intelligence-Case-Studies/main/Gestao-ROI-Comercial/imgs/banner.png"
+                        alt="Gestão de ROI Comercial" width="280">
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <!--JIRA ANALYTICS-->
+              <li class="service-item">
+                <a href="https://github.com/paulo-emilio/Business-Intelligence-Case-Studies/tree/main/Jira-Analytics"
+                  target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/airflow.png" alt="Apache Airflow" width="40">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Gestão de Chamados de TI (Jira)</h4>
+
+                    <p class="service-item-text">
+                      Plataforma analítica de performance de TI a partir de dados do Jira, com
+                      indicadores de MTTA, MTTR e SLA.
+                      <br>
+                      <img src="https://raw.githubusercontent.com/paulo-emilio/Business-Intelligence-Case-Studies/main/Jira-Analytics/imgs/banner.png"
+                        alt="Gestão de Chamados de TI (Jira)" width="280">
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <!--GESTÃO FINANCEIRA SAP-->
+              <li class="service-item">
+                <a href="https://github.com/paulo-emilio/Business-Intelligence-Case-Studies/tree/main/Gestao-Financeira-Projeto"
+                  target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/excel.png" alt="Excel" width="40">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Gestão Financeira da Implantação SAP</h4>
+
+                    <p class="service-item-text">
+                      Centralização do controle financeiro de uma implantação SAP, com visão executiva
+                      de orçamento, saldo disponível e forecast.
+                      <br>
+                      <img src="https://raw.githubusercontent.com/paulo-emilio/Business-Intelligence-Case-Studies/main/Gestao-Financeira-Projeto/imgs/banner.png"
+                        alt="Gestão Financeira da Implantação SAP" width="280">
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+            </ul>
+
+          </section>
+
+          <!--
+            - ARTIGOS
+          -->
+
+          <section class="service">
+
+            <h3 class="h3 service-title">Artigos</h3>
+
+            <ul class="service-list">
+
+              <!--MEDIUM-->
+              <li class="service-item">
+                <a href="https://medium.com/@pauloemilio.sistemas/como-começar-na-análise-de-dados-ferramentas-e-técnicas-essenciais-abb3a0fd5cb4"
+                  target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/medium.png" alt="design icon" width="40">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Como começar na Análise de Dados: Ferramentas e Técnicas Essenciais</h4>
+
+                    <p class="service-item-text">
+                      Este artigo explora as principais ferramentas e técnicas indispensáveis para
+                      quem está começando na análise de dados. Aborda o uso de Excel, Power BI, SQL e
+                      Python, oferecendo uma visão prática sobre como desenvolver habilidades
+                      fundamentais.
+                      <br>
+                      <img src="./img/medium-comecando.jpg" alt="design icon" width="300">
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <!--MEDIUM-->
+              <li class="service-item">
+                <a href="https://medium.com/@paulo-emilio/compreendendo-os-processos-etl-essenciais-para-a-análise-de-dados-e48b83fd439a"
+                  target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/medium.png" alt="design icon" width="40">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Compreendendo os Processos ETL: Essenciais para a Análise de Dados</h4>
+
+                    <p class="service-item-text">
+                      O artigo explica o processo ETL (Extração, Transformação e Carregamento),
+                      detalhando suas etapas e importância. Inclui exemplos práticos, ferramentas
+                      úteis e boas práticas para uma implementação eficaz.
+                      <br>
+                      <img src="./img/medium-etl.jpg" alt="design icon" width="300">
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+            </ul>
+
+          </section>
+
+          <!--
+            - clients
+          -->
+
+          <section class="clients">
+
+            <h3 class="h3 clients-title">Ferramentas &amp; Linguagens</h3>
+
+            <ul class="clients-list has-scrollbar">
+
+              <!--COLUNA 1-->
+              <li class="clients-item">
+
+                <!-- PYTHON-->
+                <a href="https://www.python.org/" target="_blank" rel="noreferrer" style="margin-right: 0.1cm;">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
+                    width="40" height="40" />
+                  <br>
+                </a>
+
+                <!-- POWERBI-->
+                <a href="https://app.powerbi.com/home?cmpid=pbi-glob-head-snn-signin" target="_blank" rel="noreferrer">
+                  <img src="assets/images/powerbi.svg" width="35" height="35" />
+                  <br>
+                </a>
+
+                <!-- EXCEL-->
+                <a href="https://www.microsoft.com/pt-br/microsoft-365/excel" target="_blank" rel="noreferrer">
+                  <img src="assets/images/excel.svg" width="30" height="30" />
+                  <br>
+                </a>
+
+                <!-- SQL-->
+                <a href="https://aws.amazon.com/pt/what-is/sql/" target="_blank" rel="noreferrer">
+                  <img src="assets/images/sql.svg" width="25" height="25" />
+                  <br>
+                </a>
+
+              </li>
+
+              <!--COLUNA 2-->
+              <li class="clients-item">
+
+                <!-- AIRFLOW-->
+                <a href="https://airflow.apache.org/" target="_blank" rel="noreferrer" style="margin-right: 0.1cm;">
+                  <img src="./assets/images/airflow.png" width="35" height="35" />
+                  <br>
+                </a>
+
+                <!-- JUPYTER-->
+                <a href="https://jupyter.org/" target="_blank" rel="noreferrer" style="margin-right: 0.1cm;">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg"
+                    width="40" height="40" />
+                  <br>
+                </a>
+
+                <!-- PANDAS-->
+                <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="pandas"
+                    width="40" height="40" />
+                  <br>
+                </a>
+
+                <!-- SKLEARN-->
+                <a href="https://scikit-learn.org/stable/" target="_blank" rel="noreferrer">
+                  <img src="assets/images/scikit-learn.svg" width="25" height="25" />
+                  <br>
+                </a>
+
+                <!-- KAGGLE-->
+                <a href="https://www.kaggle.com" target="_blank" rel="noreferrer">
+                  <img src="assets/images/kaggle.svg" width="20" height="20" />
+                  <br>
+                </a>
+
+              </li>
+
+              <!--COLUNA 3-->
+              <li class="clients-item">
+
+                <!-- MYSQL-->
+                <a href="https://www.mysql.com/" target="_blank" rel="noreferrer" style="margin-right: 0.1cm;">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+                    width="40" height="40" />
+                  <br>
+                </a>
+
+                <!-- SQL SERVER-->
+                <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg"
+                    width="45" height="45" />
+                </a>
+
+                <!--ORACLE -->
+                <a href="https://www.oracle.com/" target="_blank" rel="noreferrer">
+                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg"
+                    alt="oracle" width="40" height="40" />
+                  <br>
+                </a>
+
+                <!-- POSTGRESQL-->
+                <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+                    alt="postgresql" width="35" height="35" />
+                  <br>
+                </a>
+
+              </li>
+
+              <!--COLUNA 4-->
+              <li class="clients-item">
+
+                <!-- VSCODE-->
+                <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="30"
+                    height="30" />
+                  <br>
+                </a>
+
+                <!--GIT -->
+                <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg"
+                    width="40" height="40" />
+                  <br>
+                </a>
+
+                <!-- GITHUB -->
+                <a href="https://github.com/paulo-emilio" target="_blank" rel="noreferrer">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"
+                    height="30" />
+                  <br>
+                </a>
+
+                <!-- DATABRICKS-->
+                <a href="https://www.databricks.com/" target="_blank" rel="noreferrer">
+                  <img src="assets/images/databricks.svg" width="35" height="35" />
+                  <br>
+                </a>
+
+              </li>
+
+            </ul>
+          </section>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CURRÍCULO
+      -->
+
+      <article class="resume" data-page="currículo">
+
+        <header>
+          <h2 class="h2 article-title">Currículo</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Formação</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Centro Universitário UNA</h4>
+
+              <span>2019 — 2023</span>
+
+              <p class="timeline-text">
+                Bacharelado em Sistemas de Informação
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Uniamérica</h4>
+
+              <span>2023 — 2024</span>
+
+              <p class="timeline-text">
+                Pós-graduação em Data Science
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <!----------------EXPERIÊNCIA---------------->
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiência</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <!--PROFISSIONAL DE INFORMATICA-->
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Profissional de Informática</h4>
+
+              <span>Autônomo | Remoto</span>
+              <span>mai 2023 — o momento</span>
+
+              <div class="timeline-text">
+                <p>● Criação e edição de planilhas personalizadas e automação de processos para gerenciamento de
+                  informações e análise de dados.</p>
+                <p>● Instalação, configuração e manutenção de software para clientes individuais e empresas.</p>
+                <p>● Diagnóstico e reparo de problemas de hardware e software.</p>
+                <p>● Formatação e reinstalação de sistemas operacionais.</p>
+                <p>● Suporte técnico remoto e presencial resolvendo problemas de forma eficiente.</p>
+              </div>
+
+            </li>
+
+            <!--ANALISTA-->
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Analista de TI</h4>
+
+              <span>Prefeitura Municipal | Abaeté, MG</span>
+              <span>mar 2022 — mai 2023</span>
+
+              <div class="timeline-text">
+                <p>Ocupando o cargo de "Auxiliar de Administração" por concurso na prefeitura, continuei minha atuação
+                  na área de informática, assumindo mais responsabilidades e autonomia.</p>
+                <p>● Liderança na criação e implementação bem-sucedidas de um site para gerenciamento de chamados,
+                  promovendo uma comunicação eficiente entre a área de informática e as demais áreas da organização.</p>
+                <p>● Introdução de soluções tecnológicas avançadas, com foco na modernização dos softwares e hardwares
+                  utilizados pela prefeitura.</p>
+                <p>● Trabalho colaborativo com diferentes departamentos para personalizar soluções tecnológicas,
+                  atendendo às necessidades específicas de cada setor.</p>
+              </div>
+
+            </li>
+
+            <!--ESTÁGIO-->
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Estagiário de TI</h4>
+              <span>Prefeitura Municipal | Abaeté, MG</span>
+              <span>mai 2021 — fev 2022</span>
+
+              <div class="timeline-text">
+                <p>● Manutenção e resolução de problemas em sistemas.</p>
+                <p>● Garantia da eficiência e integridade dos processos.</p>
+                <p>● Atualizações de software e implementação de medidas de segurança.</p>
+                <p>● Suporte técnico ativo aos usuários.</p>
+              </div>
+
+            </li>
+
+            <!--DF SEGUROS-->
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Agente de Seguros</h4>
+              <span>DF Seguros | Remoto</span>
+              <span>jan 2019 — mar 2020</span>
+
+              <div class="timeline-text">
+                <p>● Expansão da DF Seguros de Brasília em minha cidade Abaeté.</p>
+                <p>● Papel fundamental na promoção e venda de seguros.</p>
+                <p>● Responsável por prospectar novos clientes, realizar cotações personalizadas e finalizar contratos
+                  de seguros.</p>
+              </div>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <!-------------SKILLS----------->
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Minhas skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Análise e Interpretação de Dados</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Data Cleaning e Pré-processamento</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Modelagem de Dados</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Data Storytelling</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Business Intelligence</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Estatística</h5>
+                <data value="65">65%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Machine Learning</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">SQL</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Power BI</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Excel</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
