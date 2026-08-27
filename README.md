@@ -1,44 +1,25 @@
-# vCard - Personal portfolio
+# Portfólio — Paulo Emílio Oliveira
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+🔗 [paulo-emilio.github.io](https://paulo-emilio.github.io)
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+Site pessoal com estudos de caso reais de **Business Intelligence, Analytics e Engenharia de Dados** — implantações SAP S/4HANA, integração de dados corporativos, pipelines com Python/Apache Airflow e dashboards executivos em Power BI.
 
-## Demo
+## Sobre
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+O site reúne os cases profissionais documentados em [`Business-Intelligence-Case-Studies`](https://github.com/paulo-emilio/Business-Intelligence-Case-Studies), cada um com contexto, arquitetura da solução, tecnologias utilizadas e resultados obtidos.
 
-## Prerequisites
+## Tecnologias
 
-Before you begin, ensure you have met the following requirements:
+Site estático, sem frameworks — HTML5, CSS3 e JavaScript puro, para manter compatibilidade total com GitHub Pages.
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+Baseado no template [vCard](https://github.com/codewithsadee/vcard-personal-portfolio) (MIT License), de [@codewithsadee](https://github.com/codewithsadee), adaptado com conteúdo, seções e identidade visual próprios.
 
-## Installing vCard
+## Contato
 
-To install **vCard**, follow these steps:
+* [LinkedIn](https://www.linkedin.com/in/paulo-emilio/)
+* [GitHub](https://github.com/paulo-emilio)
+* pauloemilio.ds@gmail.com
 
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-## Contact
-
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
-
-## License
+## Licença
 
 MIT
