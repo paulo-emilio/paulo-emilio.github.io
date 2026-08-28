@@ -550,7 +550,7 @@ main {
 }
 
 .service-icon-box {
-  margin-bottom: 10px;
+  margin-bottom: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -778,23 +778,16 @@ main {
 
 .clients-list {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: flex-start;
-  gap: 15px;
-  margin: 0 -15px;
-  padding: 25px;
-  padding-bottom: 2px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 25px;
+  gap: 30px 18px;
+  padding: 20px 0 5px;
 }
 
 .clients-item {
-  min-width: 10%;
-  scroll-snap-align: start;
-  margin: 0 px; /* Added margin for spacing */
+  flex: 0 1 120px;
+  max-width: 150px;
 }
 
 .clients-item img {
@@ -813,7 +806,6 @@ main {
   letter-spacing: 0.04em;
   text-align: center;
   margin-bottom: 12px;
-  white-space: nowrap;
 }
 
 
@@ -1296,15 +1288,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 @media (min-width: 450px) {
 
   /**
-   * client
-   */
-
-  .clients-item { min-width: calc(28% - 10px); }
-
-
-
-  /**
-   * #PORTFOLIO, BLOG 
+   * #PORTFOLIO, BLOG
    */
 
   .project-img,
@@ -1455,7 +1439,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 18px;
+    gap: 30px;
     padding: 30px;
   }
 
@@ -1535,14 +1519,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* clients */
 
-  .clients-list {
-    gap: 50px;
-    margin: 0 -30px;
-    padding: 45px;
-    scroll-padding-inline: 45px;
-  }
-
-  .clients-item { min-width: calc(28% - 35px); }
+  .clients-list { gap: 40px 25px; }
 
 
 
@@ -1795,10 +1772,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* testimonials */
 
   .testimonials-item { min-width: calc(50% - 15px); }
-
-  /* clients */
-
-  .clients-item { min-width: calc(20% - 30px); }
 
 
 
